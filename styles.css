@@ -86,94 +86,6 @@ body {
   color: #be3144;
 }
 
-/* PROJETOS */
-
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-#projects > h2 {
-  font-size: 4em;
-  font-weight: bold;
-  color: white;
-  text-decoration: underline;
-}
-
-#buttons-scrollbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: calc(80vh - 60px);
-}
-
-.scroll {
-  background-color: #be3144;
-  font-size: 4em;
-  color: white;
-  border: none;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px black;
-}
-
-#scroll-left-media {
-  display: none;
-}
-
-.scroll:active {
-  box-shadow: none;
-}
-
-.scroll:hover {
-  cursor: pointer;
-}
-
-.left {
-  margin-right: 20px;
-}
-
-.right {
-  margin-left: 20px;
-}
-
-#scroll-box {
-  display: flex;
-  width: 500px;
-  height: calc(80vh - 20px);
-  overflow-x: hidden;
-}
-
-#scroll-box::-webkit-scrollbar {
-  display: none;
-}
-
-.project-tile {
-  flex: none;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  overflow: hidden;
-}
-
-.project-anchor {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-}
-
-.project-embed {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
 /* CONTACTO */
 
 #contact {
@@ -267,41 +179,6 @@ body {
 
   #name {
     font-size: 4em;
-  }
-
-  #buttons-scrollbox {
-    display: block;
-    text-align: center;
-  }
-
-  #scroll-box {
-    width: 350px;
-    height: calc(80vh - 120px);
-  }
-
-  .scroll {
-    margin-top: 20px;
-    font-size: 2em;
-    width: 75px;
-    height: 75px;
-  }
-
-  #scroll-left {
-    display: none;
-  }
-
-  #scroll-left-media {
-    display: unset;
-  }
-
-  .left {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .right {
-    margin-right: 10px;
-    margin-left: 10px;
   }
 
   #contact-container {

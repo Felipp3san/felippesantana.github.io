@@ -11,7 +11,6 @@
     <header id="header">
         <nav id="navbar">
             <a id="nav-link" href="#">Sobre</a>
-            <a id="nav-link" href="#projects">Projetos</a>
             <a id="nav-link" href="#footer">Contacto</a>
         </nav>
     </header>
@@ -25,40 +24,6 @@
                 <p id="role">Estudante</p> 
             </div>
         </section>
-
-        <section id="projects">
-            <h2>Meus Projetos</h2>
-            <div id="buttons-scrollbox">
-                <button id="scroll-left" class="scroll left"><</button>
-                <div id="scroll-box">
-                    <!-- <div class="project-tile"><a href="./Projeto1/index.html" target="_blank"><img class="project-img" src="./Projeto1/formulario.png" alt=""></a></div> -->
-                    <div class="project-tile">
-                        <a class="project-achor" href="./Projeto1/index.html" target="_blank">
-                            <embed class="project-embed" type="text/html" src="./Projeto1/index.html">
-                        </a>
-                    </div> 
-                    <div class="project-tile">
-                        <a class="project-achor" href="./Projeto2/index.html" target="_blank">
-                            <embed class="project-embed" type="text/html" src="./Projeto2/index.html">
-                        </a>
-                    </div>
-                    <div class="project-tile">
-                        <a class="project-achor" href="./Projeto3/index.html" target="_blank">
-                            <embed class="project-embed" type="text/html" src="./Projeto3/index.html">
-                        </a>
-                    </div>
-                    <div class="project-tile">
-                        <a class="project-achor" href="./Projeto4/index.html" target="_blank">
-                            <embed class="project-embed" type="text/html" src="./Projeto4/index.html">
-                        </a>
-                    </div>
-                </div>
-                <button id="scroll-left-media" class="scroll left"><</button>
-                <button id="scroll-right" class="scroll right">></button>
-            </div>
-            
-        </section>
-
         <section id="contact">
             <div id="contact-container">
                 <div id="message">
@@ -82,33 +47,3 @@
     </footer>
 </body>
 </html>
-
-<script>
-
-    const buttonLeft = document.getElementById('scroll-left')
-    const buttonLeftMedia = document.getElementById('scroll-left-media')
-    const buttonRight = document.getElementById('scroll-right')
-    var scrollBox = document.getElementById('scroll-box')
-
-    var positionInfo = scrollBox.getBoundingClientRect();
-    var height = positionInfo.height;
-    var width = positionInfo.width;
-
-    window.addEventListener("resize", (event) => {
-        positionInfo = scrollBox.getBoundingClientRect();
-        height = positionInfo.height;
-        width = positionInfo.width; 
-    });
-
-    buttonLeft.onclick = function (event) {
-        scrollBox.scrollLeft -= width;
-    };
-
-    buttonLeftMedia.onclick = function (event) {
-        scrollBox.scrollLeft -= width;
-    };
-
-    buttonRight.onclick = function (event) {
-        scrollBox.scrollLeft += width;
-    };
-</script>
